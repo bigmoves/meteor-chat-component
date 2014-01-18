@@ -1,4 +1,4 @@
-Meteor-Chat-UI
+meteor-chat-component
 ==============
 
 Example chat interface built with Meteor.js
