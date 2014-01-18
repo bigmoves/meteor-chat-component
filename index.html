@@ -9,22 +9,22 @@
 
 <template name="chat_component">
   <div class="chat-component">
-  	<ul class="conversation">
-  		{{#each messages}}
-	  		<li class="txt">
-		  		{{> chat_message}}
-	  		</li>
-	  	{{/each}}
-  	</ul>
-  	<form class="new-message" onsubmit="return false">
-  		<input type="text" id="message" placeholder="Send new message" value="" class="txt-field">
-  		<input type="submit" class="send-btn" value="Send">
-  	</form>
+    <ul class="conversation">
+      {{#each messages}}
+        <li class="txt">
+          {{> chat_message}}
+        </li>
+      {{/each}}
+    </ul>
+    <form class="new-message" onsubmit="return false">
+      <input type="text" id="message" placeholder="Send new message" value="" class="txt-field">
+      <input type="submit" class="send-btn" value="Send">
+    </form>
   </div>
 </template>
 
 <template name="chat_message">
-	<div class="message media">
+  <div class="message media">
     <div class="img">
       <img class="avatar" src="{{avatarUrl}}" title="{{instagramUserName}}">
     </div>
@@ -32,16 +32,16 @@
      {{> user_message}}
      {{> time_stamp}}
     </div>
-	</div>
+  </div>
 </template>
 
 <template name="user_message">
-	<div class="user-message">{{message}}</div>
+  <div class="user-message">{{message}}</div>
 </template>
 
 <template name="time_stamp">
-	<div class="time-stamp">
-		<i class="fa fa-clock-o"></i>
-		{{formatDate timeStamp}}
-	</div>
+  <div class="time-stamp">
+    <i class="fa fa-clock-o"></i>
+    {{formatDate timeStamp}}
+  </div>
 </template>
